@@ -1,15 +1,31 @@
 {
   "name": "myportfolio",
   "version": "1.0.0",
-  "description": "Dimension by HTML5 UP\r html5up.net | @ajlkn\r Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)",
+  "description": "",
   "main": "app.js",
   "scripts": {
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "build": ""
   },
   "author": "",
   "license": "ISC",
   "homepage": "https://josh-sturgess.github.io/myportfolio/",
   "dependencies": {
-    "gh-pages": "^2.0.1"
+    "build": "^0.1.4",
+    "dist": "^0.1.2",
+    "grunt": "^1.0.3",
+    "script": "^0.1.4",
+    "webpack": "^4.25.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Josh-Sturgess/myPortfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Josh-Sturgess/myPortfolio/issues"
   }
 }
