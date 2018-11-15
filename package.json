@@ -5,11 +5,10 @@
   "main": "app.js",
   "scripts": {
     "deploy": "gh-pages -d dist",
-    "build": ""
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://josh-sturgess.github.io/myportfolio/",
+  "homepage": "https://josh-sturgess.github.io/myportfolio",
   "dependencies": {
     "build": "^0.1.4",
     "dist": "^0.1.2",
