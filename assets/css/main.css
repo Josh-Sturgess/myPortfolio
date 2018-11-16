@@ -1632,10 +1632,17 @@ input, select, textarea {
 		}
 
 @media screen and (max-width: 480px) {
+	#main article {
+	padding: 3rem 1.5rem 0.5rem 1.5rem ;
+	width: 100vw;
+	height: 100vh;
+	}
+}
 
-			#main article {
-				padding: 3rem 1.5rem 0.5rem 1.5rem ;
-				width: 100vw;
-				height: 100vh;
-			}
-		}
+@media screen and (max-width: 480px) {
+
+	article .major {
+	max-width: 95%;
+	}
+}
+
