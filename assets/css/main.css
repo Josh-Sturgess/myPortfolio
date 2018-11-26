@@ -1622,7 +1622,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 		.slide-horizontal .char:before {
 		  color: #08fcd7;
 			text-decoration: underline;
-			text-shadow: 3.33px 1px 1px rgba(254,11,86,.999);
+			text-shadow: 3.33px 1.5px 1.5px rgba(254,11,86,.999);
 		  transition-delay: calc( 0.02s * ( var(--char-index)) );
 		}
 
