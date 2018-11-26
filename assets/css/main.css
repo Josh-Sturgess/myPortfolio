@@ -203,6 +203,7 @@ input, select, textarea {
 		font-size: 2.25rem;
 		line-height: 1.3;
 		letter-spacing: 0.5rem;
+		color: rgba(255,255,255,.9);
 	}
 
 	h2 {
@@ -1592,7 +1593,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 		.slide-horizontal .char:before,
 		.slide-horizontal .char:after {
 		  visibility: visible;
-		  color: #FFF;
+		  color: rgba(255,255,255,.9);
 			text-decoration: underline;
 		  transition: -webkit-transform 0.5s cubic-bezier(0.9, 0, 0.2, 1);
 		  transition: transform 0.5s cubic-bezier(0.9, 0, 0.2, 1);
@@ -1610,7 +1611,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 		.slide-horizontal .char:before,
 		.slide-horizontal .char:after {
 		  visibility: visible;
-		  color: #FFF;
+		  color: rgba(255,255,255,.9);
 			text-decoration: underline;
 		  transition: -webkit-transform 0.5s cubic-bezier(0.9, 0, 0.2, 1);
 		  transition: transform 0.5s cubic-bezier(0.9, 0, 0.2, 1);
@@ -1621,7 +1622,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 		.slide-horizontal .char:before {
 		  color: #08fcd7;
 			text-decoration: underline;
-			text-shadow: 3.33px 1.5px 1.5px rgba(254,11,86,.999);
+			text-shadow: 3.33px 1px 1px rgba(254,11,86,.999);
 		  transition-delay: calc( 0.02s * ( var(--char-index)) );
 		}
 
@@ -1632,6 +1633,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 		.slide-horizontal:hover .char:after {
 		  transition-delay: calc( 0.02s * ( var(--char-index)) );
 		}
+
 
 		.slide-horizontal .char:before {
 		  -webkit-transform: translateX(110%);
@@ -1645,6 +1647,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 		  -webkit-transform: translateX(-110%);
 		          transform: translateX(-110%);
 		}
+
 
 
 
