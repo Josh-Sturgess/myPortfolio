@@ -163,7 +163,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: rgba(255,255,255,.85);
+		color: rgba(255,255,255,.9);
 		font-weight: 800;
 	}
 
@@ -1248,7 +1248,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 				font-size: .9rem;
 				line-height: 2;
 				color: rgba(255, 255, 255, 0.9);
-				text-shadow: 1.333px 1.333px 3.33px #000;
+				text-shadow: 1.333px 1.333px 15px #1c1c1c;
 				}
 
 
