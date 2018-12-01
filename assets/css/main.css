@@ -1650,6 +1650,84 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 
 
 
+.zip-it .char,
+		.split-it .char {
+		  color: #08fdd8;
+			text-shadow: 0px .5px 1px rgba(255,255,255,.5);
+
+		}
+		.zip-it .char,
+		.zip-it .char:before,
+		.zip-it .char:after,
+		.split-it .char,
+		.split-it .char:before,
+		.split-it .char:after {
+
+		  transition: -webkit-transform 0.8s cubic-bezier(0.75, 0, 0.25, 1);
+		  transition: transform 0.8s cubic-bezier(0.75, 0, 0.25, 1);
+		  transition: transform 0.8s cubic-bezier(0.75, 0, 0.25, 1), -webkit-transform 0.8s cubic-bezier(0.75, 0, 0.25, 1);
+		  transition-delay: calc( 0.2s * var(--distance-percent) );
+		}
+		.zip-it .char:before,
+		.zip-it .char:after,
+		.split-it .char:before,
+		.split-it .char:after {
+		  visibility: visible;
+		  color: #8f8f8f;
+			text-shadow: 0px .5px 1px rgba(33,33,33,.5);
+
+		}
+		.zip-it .char:before,
+		.split-it .char:before {
+		  -webkit-clip-path: polygon(0 0, 100% 0, 100% 54%, 0 54%);
+		          clip-path: polygon(0 0, 100% 0, 100% 54%, 0 54%);
+		}
+		.zip-it .char:after,
+		.split-it .char:after {
+		  -webkit-clip-path: polygon(0 46%, 100% 46%, 100% 100%, 0 100%);
+		          clip-path: polygon(0 46%, 100% 46%, 100% 100%, 0 100%);
+
+		}
+		.zip-it:hover .char:before,
+		.split-it:hover .char:before {
+		  -webkit-transform: translateY(-45%) scaleY(0);
+		          transform: translateY(-45%) scaleY(0);
+
+		}
+		.zip-it:hover .char:after,
+		.split-it:hover .char:after {
+		  -webkit-transform: translateY(45%) scaleY(0);
+		          transform: translateY(45%) scaleY(0);
+
+		}
+
+
+
+		.flip-it .char,
+		.flip-3d .char {
+		  transition: -webkit-transform 0.6s cubic-bezier(0.6, 0, 0, 0.6);
+		  transition: transform 0.6s cubic-bezier(0.6, 0, 0, 0.6);
+		  transition: transform 0.6s cubic-bezier(0.6, 0, 0, 0.6), -webkit-transform 0.6s cubic-bezier(0.6, 0, 0, 0.6);
+		  transition-delay: calc( 0.3s * ( 1 - var(--distance-percent)) );
+		  transition-delay: calc( 0.3s * var(--distance-percent) );
+		}
+		.flip-it:hover .char,
+		.flip-3d:hover .char {
+		  -webkit-transform: rotateX(-1turn);
+		          transform: rotateX(-1turn);
+		  transition-duration: 1s;
+		  transition-delay: calc( 0.3s * var(--distance-percent) );
+		  transition-delay: calc( 0.3s * ( 1 - var(--distance-percent)) );
+		}
+
+		.flip-3d {
+		  -webkit-perspective: 200px;
+		          perspective: 200px;
+		  -webkit-transform-style: preserve-3d;
+		          transform-style: preserve-3d;
+		}
+
+
 
 			@media screen and (max-width: 480px) {
 
