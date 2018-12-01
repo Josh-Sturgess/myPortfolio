@@ -1097,7 +1097,7 @@ input, select, textarea {
 		width: 100%;
 		padding: 4rem 2rem;
 		z-index: 100;
-		background-image: linear-gradient(#000000, #333);
+		background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	}
 
 		#wrapper:before {
@@ -1463,7 +1463,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(27, 31, 34, 0.9);
+			background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), 
+			linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ 			background-blend-mode: multiply;
 			border-radius: 4px;
 			opacity: 0;
 			height: 100%;
@@ -1474,7 +1476,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 				-webkit-transform: translateY(0);
 				-ms-transform: translateY(0);
 				transform: translateY(0);
-				opacity: 1;
+				opacity: .9;
 				height: 100%;
 				max-width: 100vw;
 			}
