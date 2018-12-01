@@ -1584,21 +1584,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 		}
 
 
-.bigCool {
-	color: #08fcd7;
-	font-size: 1.5em;
-	letter-spacing: 3.33px;
-}
-
-.bigPanic {
-	color: #fe0b56;
-	background-color: #eee;
-	font-size: 1.5em;
-	letter-spacing: 3.33px;
-	font-weight: 900;
-	text-decoration: underline;
-	border-radius: 3.33%;	
-}
 
 
 
@@ -1820,7 +1805,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 }
 .fall-out .char:before, .fall-out .char:after {
   visibility: visible;
-  color: #FFF;
+  color: ##fe0b56;
   -webkit-animation-timing-function: cubic-bezier(0.77, 0.02, 0.11, 0.97);
           animation-timing-function: cubic-bezier(0.77, 0.02, 0.11, 0.97);
   -webkit-animation-fill-mode: both;
