@@ -1574,6 +1574,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 			text-transform: uppercase;
 		}
 
+
+	#footer h4 {
+			color: #DCDCDC;
+			letter-spacing: .333em;
+			font-weight:900;
+		}
+
 		body.is-article-visible #footer {
 			-moz-transform: scale(0.95);
 			-webkit-transform: scale(0.95);
@@ -1673,7 +1680,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 		.split-it .char:before,
 		.split-it .char:after {
 		  visibility: visible;
-		  color: #ececec;
+		  color: #d3d3d3;
 			text-shadow: 0px .5px 1px rgba(33,33,33,.5);
 
 		}
