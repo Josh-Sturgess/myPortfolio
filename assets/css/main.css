@@ -1805,7 +1805,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 }
 .fall-out .char:before, .fall-out .char:after {
   visibility: visible;
-  color: ##fe0b56;
+  color: #fe0b56;
   -webkit-animation-timing-function: cubic-bezier(0.77, 0.02, 0.11, 0.97);
           animation-timing-function: cubic-bezier(0.77, 0.02, 0.11, 0.97);
   -webkit-animation-fill-mode: both;
