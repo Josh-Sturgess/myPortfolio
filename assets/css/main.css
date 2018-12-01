@@ -163,8 +163,8 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #ffffff;
-		font-weight: 600;
+		color: rgba(255,255,255,.85);
+		font-weight: 800;
 	}
 
 	em, i {
@@ -1245,11 +1245,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 			#header .content p {
 				text-transform: uppercase;
 				letter-spacing: 0.2rem;
-				font-size: .8rem;
+				font-size: .9rem;
 				line-height: 2;
-				text-shadow: .5px .5px .333px #000;
+				color: rgba(255, 255, 255, 0.9);
+				text-shadow: 1.333px 1.333px 3.33px #000;
+				}
 
-			}
 
 		#header nav ul {
 			display: -moz-flex;
@@ -1553,6 +1554,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 
 .divider {
 	text-align: center;
+	align-self: center;
 }
 
 /* Footer */
@@ -1579,7 +1581,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 
 	#footer h4 {
 			color: #DCDCDC;
-			letter-spacing: .333em;
+			font-size: 0.85rem;
+    			letter-spacing: 0.6em;
 			font-weight:900;
 		}
 
