@@ -1737,6 +1737,156 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 		}
 
 
+.bounce-it .char {
+  line-height: 1;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+  -webkit-animation-timing-function: cubic-bezier(0.77, 0.02, 0.11, 0.97);
+          animation-timing-function: cubic-bezier(0.77, 0.02, 0.11, 0.97);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: calc(0.05s * var(--char-index) );
+          animation-delay: calc(0.05s * var(--char-index) );
+  -webkit-animation-duration: calc( 0.2s + ( 0.03s * var(--char-total)) );
+          animation-duration: calc( 0.2s + ( 0.03s * var(--char-total)) );
+}
+.bounce-it:hover .char {
+  -webkit-animation-name: bounce-char;
+          animation-name: bounce-char;
+}
+
+@-webkit-keyframes bounce-end {
+  to {
+    -webkit-transform: translateY(0%) scale(1);
+            transform: translateY(0%) scale(1);
+  }
+}
+
+@keyframes bounce-end {
+  to {
+    -webkit-transform: translateY(0%) scale(1);
+            transform: translateY(0%) scale(1);
+  }
+}
+@-webkit-keyframes bounce-char {
+  20% {
+    -webkit-transform: translateY(0%) scale(1.3, 0.8);
+            transform: translateY(0%) scale(1.3, 0.8);
+  }
+  70% {
+    -webkit-transform: translateY(-40%) scale(0.8, 1.2);
+            transform: translateY(-40%) scale(0.8, 1.2);
+  }
+}
+@keyframes bounce-char {
+  20% {
+    -webkit-transform: translateY(0%) scale(1.3, 0.8);
+            transform: translateY(0%) scale(1.3, 0.8);
+  }
+  70% {
+    -webkit-transform: translateY(-40%) scale(0.8, 1.2);
+            transform: translateY(-40%) scale(0.8, 1.2);
+  }
+}
+
+
+.fall-out .char {
+  transition: -webkit-transform 0.5s cubic-bezier(0.86, 0.01, 0.14, 0.98);
+  transition: transform 0.5s cubic-bezier(0.86, 0.01, 0.14, 0.98);
+  transition: transform 0.5s cubic-bezier(0.86, 0.01, 0.14, 0.98), -webkit-transform 0.5s cubic-bezier(0.86, 0.01, 0.14, 0.98);
+  color: transparent;
+}
+.fall-out .char:before, .fall-out .char:after {
+  visibility: visible;
+  color: #FFF;
+  -webkit-animation-timing-function: cubic-bezier(0.77, 0.02, 0.11, 0.97);
+          animation-timing-function: cubic-bezier(0.77, 0.02, 0.11, 0.97);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: calc(0.75s + (0.05s * var(--char-index)) );
+          animation-delay: calc(0.75s + (0.05s * var(--char-index)) );
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+.fall-out .char:after {
+  -webkit-animation-delay: calc(0.05s * var(--char-index) );
+          animation-delay: calc(0.05s * var(--char-index) );
+}
+.fall-out:hover .char:before {
+  -webkit-animation-name: fall-in;
+          animation-name: fall-in;
+}
+.fall-out:hover .char:after {
+  -webkit-animation-name: fall-out;
+          animation-name: fall-out;
+}
+
+@-webkit-keyframes fall-in {
+  0% {
+    -webkit-transform: translateY(-150%) rotate(-120deg);
+            transform: translateY(-150%) rotate(-120deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%) rotate(0deg);
+            transform: translateY(0%) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes fall-in {
+  0% {
+    -webkit-transform: translateY(-150%) rotate(-120deg);
+            transform: translateY(-150%) rotate(-120deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%) rotate(0deg);
+            transform: translateY(0%) rotate(0deg);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fall-out {
+  50% {
+    -webkit-transform: translateY(10%) rotate(15deg);
+            transform: translateY(10%) rotate(15deg);
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(250%) rotate(120deg);
+            transform: translateY(250%) rotate(120deg);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    opacity: 0;
+  }
+}
+@keyframes fall-out {
+  50% {
+    -webkit-transform: translateY(10%) rotate(15deg);
+            transform: translateY(10%) rotate(15deg);
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(250%) rotate(120deg);
+            transform: translateY(250%) rotate(120deg);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    opacity: 0;
+  }
+}
+
 
 			@media screen and (max-width: 480px) {
 
