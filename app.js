@@ -64,12 +64,12 @@ particlesJS('particles-js',
       "enable": true,
       "distance": 150,
       "color": "#2dfcd8",
-      "opacity": 0.6,
-      "width": 4.20
+      "opacity": 0.7,
+      "width": 3.33
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 5,
       "direction": "none",
       "random": false,
       "straight": false,
