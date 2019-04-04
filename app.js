@@ -110,7 +110,7 @@ particlesJS('particles-js',
       }
     }
   },
-  "retina_detect": false
+  "retina_detect": true
 }
 
 );
